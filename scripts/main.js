@@ -503,9 +503,9 @@ Events.on(EventType.CommandIssueEvent, cons(e => {
 
 Events.on(EventType.ClientLoadEvent, 
 cons(e => {
-	alerticonlow = Core.atlas.find("pvpnotifs-alert-0");
-	alerticonhigh = Core.atlas.find("pvpnotifs-alert-1");
-	pipicon = Core.atlas.find("pvpnotifs-pip");
+	alerticonlow = Core.atlas.find("alert-0");
+	alerticonhigh = Core.atlas.find("alert-1");
+	pipicon = Core.atlas.find("pip");
 	addTrackHandler(BlockTrackHandler.new("graphite",BlockBuildTracker, Blocks.graphitePress,false,{
 		"customText": function(team,block,tile){
 			return "has started graphite production "+toBlockEmoji(block)+""+toBlockEmoji(Items.graphite);
@@ -641,13 +641,13 @@ cons(e => {
 	
 	Vars.mods.getScripts().runConsole("this.alert = this.global.alerts.onChat");
 	//onChat("Xelo",msg)
-	var rangeicon = Core.atlas.find("pvpnotifs-rangeair");
-	var rangeicon2 = Core.atlas.find("pvpnotifs-rangeground");
-	var rangeammoicon = Core.atlas.find("pvpnotifs-rangeammo");
-	var progressicon = Core.atlas.find("pvpnotifs-unitprogress");
-	var oreicon = Core.atlas.find("pvpnotifs-orescan");
-	var votekick = Core.atlas.find("pvpnotifs-votekick");
-	var pipbuttonicon = Core.atlas.find("pvpnotifs-pipicon");
+	var rangeicon = Core.atlas.find("rangeair");
+	var rangeicon2 = Core.atlas.find("rangeground");
+	var rangeammoicon = Core.atlas.find("rangeammo");
+	var progressicon = Core.atlas.find("unitprogress");
+	var oreicon = Core.atlas.find("orescan");
+	var votekick = Core.atlas.find("votekick");
+	var pipbuttonicon = Core.atlas.find("pipicon");
 	
 	//Vars.indexer.getAllied(team, BlockFlag.generator).forEach((c)=>{});
 	
