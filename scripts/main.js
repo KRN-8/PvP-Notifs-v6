@@ -1309,7 +1309,3 @@ const onChat = function(sender,message) {
 };
 
 global.alerts.onChat = function(msg){onChat("Xelo",msg);};
-
-
-
-
